@@ -1,0 +1,606 @@
+class CfgWLRequisitionPresets
+{
+    class MyWLAssetList // --- class name used in the Init module
+    {
+        class WEST // --- assets available for BLUFOR
+        {
+
+            class Infantry
+            {
+				class LIB_GER_Soldier2 // --- must be asset class name
+                {
+                    cost = 100; 
+                    requirements[]={}; // --- dispositions required ("A" = airstrip, "H" = helipad, "W" = water (harbor))
+                };
+				
+				class LIB_GER_medic // --- must be asset class name
+                {
+                    cost = 120;
+                    requirements[]={}; // --- dispositions required ("A" = airstrip, "H" = helipad, "W" = water (harbor))
+                };
+				
+				class LIB_GER_mgunner // --- must be asset class name
+                {
+                    cost = 150; // --- Command Points required
+                    requirements[]={}; // --- dispositions required ("A" = airstrip, "H" = helipad, "W" = water (harbor))
+                };
+				class LIB_GER_AT_Soldier
+                {
+                    cost = 200; 
+                    requirements[]={}; 
+                };
+				
+				class LIB_GER_AT_Grenadier
+                {
+                    cost = 150; 
+                    requirements[]={}; 
+                };
+				
+				class LIB_GER_Sapper
+                {
+                    cost = 120; 
+                    requirements[]={}; 
+                };
+				
+				class LIB_GER_stggunner
+                {
+                    cost = 120; 
+                    requirements[]={}; 
+                };
+					
+            };
+            class Vehicles
+            {
+			    class LIB_SdKfz222
+                {
+				// -- armored car (MG)
+                    cost = 1500; 
+                    requirements[]={}; 
+                };
+				
+				class LIB_SdKfz234_1
+                {
+				// -- armored CAR (Auto cannon)
+                    cost = 2000; 
+                    requirements[]={}; 
+                };
+				
+				class LIB_SdKfz234_2
+                {
+				// -- armored car (AT)
+                    cost = 3000; 
+                    requirements[]={}; 
+                };
+				
+				class LIB_SdKfz251
+                {
+					//  -- mechanized transport
+                    cost = 1300; 
+                    requirements[]={}; 
+                };
+			
+				class LIB_OpelBlitz_Ammo
+                {
+					// -- Ammo truck
+                    cost = 1000; 
+                    requirements[]={}; 
+                };
+			
+				class LIB_OpelBlitz_Fuel
+                {
+					// -- Fuel truck
+                    cost = 1000; 
+                    requirements[]={}; 
+                };
+				
+				class LIB_OpelBlitz_Parm
+                {
+					// -- Repair truck
+                    cost = 2000; 
+                    requirements[]={}; 
+                };
+				
+				class LIB_OpelBlitz_Ambulance
+                {
+					// -- health truck
+                    cost = 1000; 
+                    requirements[]={}; 
+                };
+				
+				class LIB_Kfz1
+                {
+					// -- transport  vehicle
+                    cost = 500; 
+                    requirements[]={}; 
+                };
+				class LIB_Kfz1_MG42
+                {
+					// -- transport vehicle armed
+                    cost = 700; 
+                    requirements[]={}; 
+                };
+
+			
+               class LIB_FlakPanzerIV_Wirbelwind
+                {
+                    cost = 4500; 
+                    requirements[]={}; 
+                };
+				
+				class LIB_PzKpfwIV_H
+                {
+				// -- PANZER 4
+                    cost = 5000; 
+                    requirements[]={}; 
+                };
+				
+				class LIB_PzKpfwV
+                {
+				// -- Panther
+                    cost = 5500; 
+                    requirements[]={}; 
+                };
+				
+				class LIB_PzKpfwVI_B
+                {
+				// -- kingtiger
+                    cost = 7000; 
+                    requirements[]={}; 
+                };
+				
+				class LIB_PzKpfwVI_E
+                {
+                    cost = 6000; 
+                    requirements[]={}; 
+                };
+				
+				class LIB_SdKfz124
+                {
+                    cost = 10000; 
+                    requirements[]={}; 
+                };
+				
+				class LIB_StuG_III_G
+                {
+				// -- STUG (AT)
+                    cost = 5500; 
+                    requirements[]={}; 
+                };
+				
+				// -- i sadly don't know german tanks.
+            };
+            class Aircraft
+            {
+
+				
+            };
+			
+            class Gear
+            {
+                class LIB_BasicWeaponsBox_GER
+                {
+                    cost = 500;
+                    requirements[]={};
+                };
+				
+				class LIB_WeaponsBox_Big_GER
+                {
+                    cost = 800;
+                    requirements[]={};
+                };
+								
+				class LIB_BasicAmmunitionBox_GER
+                {
+                    cost = 500;
+                    requirements[]={};
+                };
+				
+				class LIB_Mine_Ammo_Box_Ger
+                {
+                    cost = 1000;
+                    requirements[]={};
+                };
+				
+            };
+            class Defences
+            {
+                class LIB_MG42_Lafette_Deployed
+                {
+				// -- MG42 HIGH
+                    cost = 250;
+                    requirements[]={};
+                };
+				
+			 class LIB_MG42_Lafette_low_Deployed
+                {
+				// --  MG24 low
+                    cost = 250;
+                    requirements[]={};
+                };
+				
+			 class LIB_Nebelwerfer41
+                {
+				// -- Missile Arty
+                    cost = 10000;
+                    requirements[]={};
+                };
+				
+			class LIB_Pak40
+                {
+				// -- AT
+                    cost = 3000;
+                    requirements[]={};
+                };
+				
+			class LIB_Flakvierling_38
+                {
+				// -- flak (4 guns)
+                    cost = 4000;
+                    requirements[]={};
+                };
+				
+			class LIB_FlaK_36_AA
+                {
+				// -- flak worse
+                    cost = 3000;
+                    requirements[]={};
+                };
+				
+            };
+			
+        };
+        class EAST // --- assets available for OPFOR
+        {
+			class Infantry
+            {
+			
+				class LIB_SOV_LC_rifleman
+                {
+				// -- mosin
+                    cost = 100;
+                    requirements[]={};
+                };
+				
+				class LIB_SOV_medic
+                {
+				// -- medic
+                    cost = 120;
+                    requirements[]={};
+                };
+				
+				class LIB_SOV_mgunner
+                {
+				// -- machine gunner
+                    cost = 200;
+                    requirements[]={};
+                };
+				
+				class LIB_SOV_AT_soldier
+                {
+				// Infantry AT
+                    cost = 350;
+                    requirements[]={};
+                }
+				
+				class LIB_SOV_AT_grenadier
+                {
+				// -- Infantry AT (Grenades)
+                    cost = 250;
+                    requirements[]={};
+                };
+				
+				class LIB_SOV_scout_sniper_autumn
+                {
+				// -- Infantry Sniper
+                    cost = 300;
+                    requirements[]={};
+                };
+				
+				class LIB_SOV_smgunner
+                {
+				// -- infantry submachinegunner
+                    cost = 200;
+                    requirements[]={};
+                };
+			
+				class LIB_SOV_assault_smgunner
+                {
+                    cost = 300;
+                    requirements[]={};
+                };
+			
+			};
+			
+			class Vehicles
+			   {
+				
+				class LIB_GazM1_SOV
+				 {
+				cost = 300;
+				requirements[]={};
+				 };
+				
+				class LIB_US6_Tent
+				 {
+				cost = 700;
+				requirements[]={};
+				 };
+				 
+				 class LIB_Zis5v_Med
+				 {
+				// -- Med truck
+				cost = 1200;
+				requirements[]={};
+				 };
+				 
+				 class LIB_Zis5v_Fuel
+				 {
+				// -- fuel truck
+				cost = 1200;
+				requirements[]={};
+				 };
+				 
+				 class LIB_Zis6_Parm
+				 {
+				// -- repair truck
+				cost = 1200;
+				requirements[]={};
+				 };
+				 
+				 class LIB_Zis5v
+				 {
+				// transport truck
+				cost = 600;
+				requirements[]={};
+				 };
+				 
+				 class LIB_Willys_MB
+				 {
+				// american transport truck
+				cost = 400;
+				requirements[]={};
+				 };
+		
+				class LIB_SOV_M3_Halftrack
+				 {
+				cost = 1500;
+				requirements[]={};
+				};
+				
+				class LIB_SdKfz251_captured
+				 { 
+				cost = 1000;
+				requirements[]={};
+				 };
+				 
+				class LIB_SdKfz251_captured_FFV
+				 {
+				cost = 1400;
+				requirements[]={};
+				 };
+				 
+				 class LIB_JS2_43
+				 { 
+				cost = 6300;
+				requirements[]={};
+				 };
+				 
+				class LIB_M4A2_SOV
+				 { 
+				cost = 5500;
+				requirements[]={};
+				 };
+				 
+				class LIB_SU85
+				 {
+				cost = 6000;
+				requirements[]={};
+				 };
+				 
+				class LIB_T34_76
+				 {
+				cost = 5500;
+				requirements[]={};
+				 };
+				 
+				class LIB_T34_85
+				 {
+				cost = 5800;
+				requirements[]={};
+				};
+				
+				class LIB_US6_BM13
+				 {
+				cost = 10000;
+				requirements[]={};
+				};
+				
+			};
+			
+			class Aircraft
+            {
+
+					
+            };		
+            class Gear
+            {
+                class LIB_BasicAmmunitionBox_SU
+                {
+                    cost = 300;
+                    requirements[]={};
+                };
+				
+				class LIB_Mine_Ammo_Box_Su
+                {
+                    cost = 800;
+                    requirements[]={};
+                };
+				
+				class LIB_BasicWeaponsBox_SU
+                {
+                    cost = 400;
+                    requirements[]={};
+                };
+				
+				class LIB_WeaponsBox_Big_SU
+                {
+                    cost = 700;
+                    requirements[]={};
+                };
+				
+				class LIB_Lone_Big_Box
+                {
+                    cost = 800;
+                    requirements[]={};
+                };
+            };
+            class Defences
+            {
+                class LIB_Maxim_M30_base
+                {
+				// -- MG
+                    cost = 250;
+                    requirements[]={};
+                };
+				
+				class LIB_Zis3
+                {
+				// -- AT
+                    cost = 1000;
+                    requirements[]={};
+                };
+				
+				class LIB_61k
+                {
+				// -- flak
+                    cost = 1000;
+                    requirements[]={};
+                };
+            }
+            
+        };
+    };
+};
+
+class Params
+{
+class BIS_WLStartingDaytime
+{
+	title = $STR_A3_combatpatrol_params_1;
+	values[] = {100, -6, 0, 6, -12};
+	texts[] = {$STR_A3_WL_param37_value1, $STR_A3_combatpatrol_params_3, $STR_A3_MP_COOP_m03_noon, $STR_A3_MP_COOP_m03_evening, $STR_A3_combatpatrol_params_6};
+	default = 100;
+};
+class BIS_WLTimeAcceleration
+{
+	title = $STR_A3_WL_param2_title;
+	values[] = {1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24};
+	texts[] = {$STR_special_none, "x2", "x4", "x6", "x8", "x10", "x12", "x14", "x16", "x18", "x20", "x22", "x24"};
+	default = 1;
+};
+class BIS_WLProgress
+{
+	title = $STR_A3_WL_param1_title;
+	values[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+	texts[] = {$STR_special_none,$STR_A3_WL_forcedProgress_perc_1,$STR_A3_WL_forcedProgress_perc_2,$STR_A3_WL_forcedProgress_perc_3,$STR_A3_WL_forcedProgress_perc_4,$STR_A3_WL_forcedProgress_perc_5,$STR_A3_WL_forcedProgress_perc_6,$STR_A3_WL_forcedProgress_perc_7,$STR_A3_WL_forcedProgress_perc_8,$STR_A3_WL_forcedProgress_perc_9,$STR_A3_WL_forcedProgress_perc_10,$STR_A3_WL_forcedProgress_perc_11,$STR_A3_WL_forcedProgress_perc_12};
+	default = 1;
+};
+class BIS_WLFTEnabled
+{
+	title = $STR_A3_fastravel1;
+	values[] = {1, 0, 2, 3, 4};
+	texts[] = {$STR_A3_WL_param3_value1, $STR_A3_WL_param3_value2, $STR_A3_WL_param3_value3, $STR_A3_WL_param3_value4, $STR_A3_WL_param3_value5};
+	default = 1;
+};
+class BIS_WLScanEnabled
+{
+	title = $STR_A3_WL_param4_title;
+	values[] = {1, 0};
+	texts[] = {$STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED};
+	default = 1;
+};
+class BIS_WLVotingResetEnabled
+{
+	title = $STR_A3_WL_menu_resetvoting;
+	values[] = {1, 0};
+	texts[] = {$STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED};
+	default = 1;
+};
+class BIS_WLAIVoting
+{
+	title = $STR_A3_WL_param5_title;
+	values[] = {1, 0};
+	texts[] = {$STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED};
+	default = 0;
+};
+class BIS_WLArsenalEnabled
+{
+	title = $STR_A3_Arsenal;
+	values[] = {1, 0};
+	texts[] = {$STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED};
+	default = 1;
+};
+class BIS_WLMarkersTransparency
+{
+	title = $STR_A3_WL_param7_title;
+	values[] = {4, 3, 2, 1, 0};
+	texts[] = {$STR_A3_WL_param7_value1, $STR_A3_WL_markerAlpha_perc_1, $STR_A3_WL_markerAlpha_perc_2, $STR_A3_WL_markerAlpha_perc_3, $STR_A3_WL_param7_value2};
+	default = 2;
+};
+class BIS_WLPlayersTransparency
+{
+	title = $STR_A3_WL_param8_title;
+	values[] = {4, 3, 2, 1, 0};
+	texts[] = {$STR_A3_WL_param7_value1, $STR_A3_WL_markerAlpha_perc_1, $STR_A3_WL_markerAlpha_perc_2, $STR_A3_WL_markerAlpha_perc_3, $STR_A3_WL_param7_value2};
+	default = 2;
+};
+class BIS_WLFatigueEnabled
+{
+	title = $STR_A3_fatigue1;
+	values[] = {1, 0};
+	texts[] = {$STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED};
+	default = 1;
+};
+class BIS_WLMusic
+{
+	title = $STR_A3_rscattributemusic_title;
+	values[] = {1, 0};
+	texts[] = {$STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED};
+	default = 1;
+};
+class BIS_WLVoice
+{
+	title = $STR_A3_orange_faction_idap_cfgidentities_expo_name;
+	values[] = {1, 0};
+	texts[] = {$STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED};
+	default = 1;
+};
+class BIS_WLStartCP
+{
+	title = $STR_A3_WL_param12_title;
+	values[] = {0, 100, 250, 500, 1000, 2500, 5000};
+	texts[] = {"0", "100", "250", "500", "1000", "2500", "5000"};
+	default = 500;
+};
+class BIS_WLCPMultiplier
+{
+	title = $STR_A3_WL_param13_title;
+	values[] = {1, 2, 3, 4, 5};
+	texts[] = {"1x", "2x", "3x", "4x", "5x"};
+	default = 2;
+};
+class BIS_WLVotingTimeout
+{
+	title = $STR_A3_WL_param14_title;
+	values[] = {5, 10, 15, 20, 25, 30};
+	texts[] = {"5", "10", "15", "20", "25", "30"};
+	default = 15;
+};
+class BIS_WLVehicleSpan
+{
+	title = $STR_A3_WL_param15_title;
+	values[] = {900, 1800, 3600, 5400, 7200, 1000000};
+	texts[] = {"15", "30", "60", "90", "120", $STR_A3_WL_param15_value1};
+	default = 900;
+};
+};
